@@ -35,12 +35,12 @@ public class Single_Title_CLO {
 		
 		if (url == null) {
 			System.err.println("URL is empty");
-			System.exit(0);
+			System.exit(1);
 		} else if (title_expected == null) {
-			System.err.println("Title if empty");
-			System.exit(0);
+			System.err.println("Title is empty");
+			System.exit(1);
 		} else {
-			System.out.println("URL " + url + ", Title " + title_expected);
+			System.out.println("URL: " + url + ", Title: " + title_expected);
 		}
 		
 		WebDriver driver = new FirefoxDriver();
